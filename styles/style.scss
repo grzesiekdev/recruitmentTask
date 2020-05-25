@@ -1,0 +1,73 @@
+//variables declaration
+$background-color: #eaeaea;
+$article-color: #fff;
+$article-title-color: #409b5d;
+$muted-text-color: #6995a1;
+$muted-text-size: 17px;
+$rating-text-color: #000;
+$rating-star-color: gold;
+$buttonBottomMargin: 5px;
+$collapseButton-color: #789897;
+@import url(ratingStyle.css); //importing plugin responsible for rating system
+@mixin border-radius-width 
+{
+    border-radius: 50px;
+    border-width: 2px;   
+}
+body
+{
+    background-color: $background-color;
+    .container
+    {
+        background-color: $article-color;
+        width: 50%;
+        .articleTitle
+        {
+            color: $article-title-color;
+        }
+        .muted-text
+        {
+            color: $muted-text-color;
+            font-size: $muted-text-size;
+        }
+        .rating 
+        {
+            @include border-radius-width();
+            .font-weight-bold
+            {
+                color: $rating-text-color;
+            }
+        }
+        .btn
+        {
+            @include border-radius-width();
+            font-size: 17px;
+            margin-bottom: $buttonBottomMargin;
+            .far
+            {
+                font-size: 19px;
+            }
+        }
+        .collapseButton
+        {
+            cursor: pointer;
+            font-size: 19px;
+            color: $collapseButton-color;
+        }
+        @media screen and (max-width: 768px){
+            .col-md-auto
+            {
+                text-align: center;
+                .btn
+                {
+                    width: 100%;
+                }
+            }
+            .rating
+            {
+                text-align: left;
+            }
+        }
+    }
+
+}
