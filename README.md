@@ -8,6 +8,7 @@ Basic website created from scratch for purpose of recruiting process as junior f
 * HTML5
 * SASS
   * CSS3
+  * Bootstrap
  * jQuery
   * JavaScript
 
