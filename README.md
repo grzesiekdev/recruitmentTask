@@ -1,7 +1,7 @@
 # Recruitment Task
 
 Basic website created from scratch for purpose of recruiting process as junior frontend developer.
-![Live version](https://i.imgur.com/MN2TOKu.png)
+![Live version](https://i.imgur.com/DnOs2wm.png)
 
 ## Stack
 
